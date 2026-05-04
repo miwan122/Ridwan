@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Portfolio Premium</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+
+<style>
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+  scroll-behavior: smooth;
+}
+
+body {
+  background: #0f172a;
+  color: white;
+}
+.hero-content h1 {
+  font-size: 56px;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+
+/* NAVBAR */
+header {
+  position: fixed;
+  width: 100%;
+  padding: 20px 50px;
+  display: flex;
+  justify-content: space-between;
+  background: rgba(0,0,0,0.3);
+  backdrop-filter: blur(10px);
+  z-index: 1000;
+}
+
+nav a {
+  color: white;
+  margin-left: 20px;
+  text-decoration: none;
+}
+
+/* HERO */
+.hero {
+  height: 100vh;
+  background: url('https://th.bing.com/th/id/OIP.OLm98uSRM-aZGEKeCLqhzAHaFj?o=7rm=3&rs=1&pid=ImgDetMain&o=7&rm=3') center/cover no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  position: relative;
+}
+.gambar-bulat {
+  width: 400px;
+  height: 400px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 4px solid #333;
+}
+
+.hero::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.6);
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+  line-height: 75px;
+}
+
+
+
+.hero h1 {
+  font-size: 45px;
+}
+
+.typing {
+  color: #38bdf8;
+  font-weight: bold;
+}
+.about-content button{
+  width: 100%;
+  height: 100px;
+  background: transparent;
+}
+
+/* SECTION */
+section {
+  padding: 80px 20px;
+  text-align: center;
+}
+
+/* PROJECT */
+.projects {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.card {
+  width: 280px;
+  background: #1e293b;
+  border-radius: 15px;
+  overflow: hidden;
+  transition: 0.4s;
+  opacity: 0;
+  transform: translateY(50px);
+}
+
+.card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+.card-body {
+  padding: 15px;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+/* SKILLS */
+.skill {
+  max-width: 500px;
+  margin: 20px auto;
+  text-align: left;
+}
+
+.skill p {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 5px;
+}
+.ig {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 4px solid #333;
+}
+
+.bar {
+  width: 100%;
+  height: 10px;
+  background: #1e293b;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.fill {
+  height: 100%;
+  width: 0;
+  background: linear-gradient(90deg, #38bdf8, #6366f1);
+  transition: width 1.5s ease;
+}
+
+/* BUTTON */
+button {
+  padding: 12px 25px;
+  border: none;
+  border-radius: 25px;
+  background: #38bdf8;
+  color: white;
+  cursor: pointer;
+}
+
+/* FOOTER */
+footer {
+  background: #020617;
+  padding: 20px;
+}
+
+/* SHOW ANIMATION */
+.show {
+  opacity: 1 !important;
+  transform: translateY(0) !important;
+  transition: 0.8s;
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+  <h2>MyPortfolio</h2>
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#about">Tentang</a>
+    <a href="#projects">Projek</a>
+    <a href="#skills">Skills</a>
+  </nav>
+</header>
+
+<!-- HERO -->
+ <section id="home">
+<div class="hero">
+  <div class="hero-content">
+    <img src="gl.JPEG" alt="Foto" class="gambar-bulat">
+    <h1>Halo, Saya Muhamad Ridwan 👋</h1>
+    <p>Saya adalah <span class="typing"></span></p>
+ <tr>
+  <tr>
+     <a href="">
+  <img src="wa.jpg" alt="Foto" class="ig">
+   <a href="https://www.instagram.com/miwann44?igsh=ODJobGdxaW4ydXI2">
+  <img src="gm.PNG" alt="Foto" class="ig"></a>
+   </div>
+</div>
+</section>
+
+<!-- ABOUT -->
+<section id="about">
+  <div class="about">
+  <div class="about-content">
+   <button>
+  <h2>Tentang Saya</h2>
+  <p>Hallo perkenalkan nama saya Mochamad Ridwan, saya lahir di sumedang 09 september 2007.</p> 
+  <p> Saya sekolah di SMK YAPPRI SUMEDANG, Saya mengambil jurusan tenik informatika,</p>
+  <p> dan juga saya mengikuti eskul paskibra</p></button>
+</div>
+</div>
+</section>
+
+<!-- PROJECT -->
+<section id="projects">
+  <h2>Projek Saya</h2>
+
+  <div class="projects">
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1559027615-cd4628902d4a">
+      <div class="card-body">
+        <h3>Website Toko</h3>
+        <p>Modern UI</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="projek.jpg">
+      <div class="card-body">
+        <h3>projek AI</h3>
+        <p>Tong sampah otomatis</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="ciding.jpg">
+      <div class="card-body">
+        <h3>coding</h3>
+        <p>proses</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SKILLS -->
+<section id="skills">
+  <h2>Skills</h2>
+
+  <div class="skill">
+    <p>HTML <span>90%</span></p>
+    <div class="bar"><div class="fill" data-width="90%"></div></div>
+  </div>
+
+  <div class="skill">
+    <p>CSS <span>85%</span></p>
+    <div class="bar"><div class="fill" data-width="85%"></div></div>
+  </div>
+
+  <div class="skill">
+    <p>JavaScript <span>35%</span></p>
+    <div class="bar"><div class="fill" data-width="75%"></div></div>
+  </div>
+
+  <div class="skill">
+    <p>UI Design <span>75%</span></p>
+    <div class="bar"><div class="fill" data-width="80%"></div></div>
+  </div>
+
+</section>
+
+<script>
+/* TYPING EFFECT */
+const text = ["Pogramer", "Desainer"];
+let i = 0, j = 0, current = "", isDeleting = false;
+
+function type() {
+  current = text[i];
+  if (!isDeleting) {
+    document.querySelector(".typing").textContent = current.substring(0, j++);
+    if (j > current.length) {
+      isDeleting = true;
+      setTimeout(type, 1000);
+      return;
+    }
+  } else {
+    document.querySelector(".typing").textContent = current.substring(0, j--);
+    if (j < 0) {
+      isDeleting = false;
+      i = (i + 1) % text.length;
+    }
+  }
+  setTimeout(type, isDeleting ? 50 : 100);
+}
+type();
+
+/* SCROLL ANIMATION CARD */
+const cards = document.querySelectorAll(".card");
+
+window.addEventListener("scroll", () => {
+  cards.forEach(card => {
+    const top = card.getBoundingClientRect().top;
+    if (top < window.innerHeight - 100) {
+      card.classList.add("show");
+    }
+  });
+});
+
+/* SKILL BAR ANIMATION */
+const fills = document.querySelectorAll(".fill");
+
+function animateSkills() {
+  fills.forEach(fill => {
+    const top = fill.getBoundingClientRect().top;
+    if (top < window.innerHeight - 50) {
+      fill.style.width = fill.getAttribute("data-width");
+    }
+  });
+}
+
+window.addEventListener("scroll", animateSkills);
+
+
+</script>
+
+</body>
+</html>
